@@ -8,7 +8,7 @@ const CartContainer = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch({ type: GET_TOTALS });
-  }, [cart]);
+  }, [cart, dispatch]);
   if (cart.length === 0) {
     return (
       <section className='cart'>
